@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane stylesheets="@style.css" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <GridPane prefHeight="550.0" prefWidth="800.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -36,11 +36,11 @@
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label fx:id="minutesLabels" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="Label" GridPane.rowIndex="1" />
-                  <Label fx:id="secondsLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="minutesLabel" minHeight="25" maxHeight="25" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="Label" GridPane.rowIndex="1" />
+                  <Label fx:id="secondsLabel" minHeight="25" maxHeight="25" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <TextArea fx:id="secondsTextArea" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" />
                   <TextArea fx:id="minutesTextArea" prefHeight="50.0" prefWidth="200.0" GridPane.columnIndex="1" />
                </children>
